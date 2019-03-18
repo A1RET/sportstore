@@ -152,6 +152,15 @@ img {
   letter-spacing: 0;
 }
 
+.header-navigation a:hover,
+.header-navigation a:focus {
+  opacity: 0.6;
+}
+
+.header-navigation a:active {
+  opacity: 0.3;
+}
+
 .header-navigation .header-sm {
   -ms-flex-pack: distribute;
       justify-content: space-around;
