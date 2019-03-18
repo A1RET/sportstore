@@ -1,0 +1,823 @@
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+
+  src: url("../fonts/BebasNeue-Bold.ttf");
+}
+
+body {
+  width: 1800px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Montserrat";
+  color: #8a8a8a;
+
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  background-color: #3954d9;
+  border-radius: 22px;
+}
+
+.wrapper {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+
+  background: #024770 url("../img/decor/banner.jpg") no-repeat center;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  background-color: rgba(33,33,33,0.75);
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.header-left {
+  border-right: 1px solid rgba(255,255,255, 0.2);
+}
+
+.header-right {
+  border-left: 1px solid rgba(255,255,255, 0.2);
+}
+
+.burger {
+  padding: 18px 25px 28px;
+}
+
+.burger span {
+  position: relative;
+
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+
+  background-color: #ffffff;
+}
+
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 30px;
+  height: 4px;
+
+  background-color: #ffffff;
+}
+
+.burger span::before {
+  top: -8px;
+}
+
+.burger span::after {
+  top: 8px;
+}
+
+.header-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 22px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-navigation a {
+  display: inline-block;
+  padding: 25px 18px 18px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.header-navigation .header-sm {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 298px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.header-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-sm .header-icon {
+  height: 100%;
+  padding: 0 18px;
+}
+
+.header-icon-fb {
+  background-image: url("../img/decor/sm-fb.png");
+}
+
+.header-icon-tw {
+  background-image: url(../img/decor/sm-tw.png);
+}
+
+.header-icon-g {
+  background-image: url(../img/decor/sm-g+.png);
+}
+
+.header-icon-inst {
+  background-image: url(../img/decor/sm-insta.png);
+}
+
+.header-icon-cart {
+  background-image: url(../img/decor/cart.png);
+}
+
+.header-icon-cart {
+  width: 40px;
+}
+
+.header-icon-search {
+  width: 76px;
+
+  background-color: transparent;
+  background-image: url(../img/decor/search.png);
+  border: none;
+  border-left: 1px solid rgba(255,255,255, 0.2);
+}
+
+.banner {
+  width: 610px;
+
+  text-align: center;
+}
+
+.banner h2 {
+  margin-top: 162px;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 204px;
+  line-height: 147px;
+  font-family: "Poppins";
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -15px;
+}
+
+.banner p {
+  margin: 0;
+  margin-bottom: 56px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.banner .button {
+  margin-bottom: 142px;
+  padding: 13px 25px;
+
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+
+  margin-top: -75px;
+
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+          box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.features {
+  background-color: #ffffff;
+}
+
+.features-list {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  -ms-grid-columns: auto auto auto auto;
+
+  grid-template-columns: auto auto auto auto;
+}
+
+.feature-item {
+  padding-bottom: 50px;
+
+  text-align: center;
+}
+
+.feature-title {
+  margin: 167px 0 20px;
+
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 26px;
+  font-family: "Bebas Neue";
+  color: #0d2e57;
+  letter-spacing: -1px;
+}
+
+.feature-text {
+  width: 235px;
+  margin: 0 auto 14px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.feature-item a {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  color: #3753da;
+}
+
+.offer {
+  display: -ms-grid;
+  display: grid;
+
+  background-color: #e5e5e5;
+
+  -ms-grid-columns: 50% 50%;
+
+  grid-template-columns: 50% 50%;
+}
+
+.offer-description {
+  text-align: center;
+}
+
+.offer-description h2 {
+  margin-top: 112px;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Poppins";
+  color: #616161;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.offer-title {
+  margin: 0;
+  margin-bottom: 44px;
+
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 44px;
+  font-family: "Bebas Neue";
+  color: #0d2e57;
+}
+
+.offer-text {
+  width: 505px;
+  margin: 0 auto 36px;
+
+  text-align: justify;
+}
+
+.offer-price {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  color: #3954d9;
+}
+
+.old-price {
+  margin-left: 54px;
+
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 58px;
+  color: #121212;
+  text-decoration: line-through;
+}
+
+.offer-time p {
+  display: inline-block;
+  width: 90px;
+  margin: 0;
+  margin-right: 17px;
+  margin-bottom: 42px;
+  padding: 26px 0 24px;
+
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 32px;
+  color: #2d2b27;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.offer-time p:last-child {
+  margin-right: 0;
+}
+
+.offer-time-units {
+  position: relative;
+
+  font-size: 11px;
+  line-height: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.offer-time-units::before {
+  content: "....";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+
+  -webkit-transform: translateX(-50%);
+
+      -ms-transform: translateX(-50%);
+
+          transform: translateX(-50%);
+}
+
+.offer-image img {
+  display: block;
+}
+
+.products-list {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+
+  list-style: none;
+
+  -ms-grid-columns: 25% 25% 25% 25%;
+
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.product-banner {
+  background-color: #000000;
+
+  -ms-grid-row: 2;
+
+  -ms-grid-row-span: 1;
+
+  grid-row: 2 / 3;
+}
+
+.product-banner-title {
+  margin: 50px 0 26px 50px;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 61px;
+  font-family: "Bebas Neue";
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.product-banner-text {
+  width: 230px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-left: 50px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.product-banner .button {
+  margin-left: 54px;
+}
+
+.product-banner2col {
+  background: #000000 url("../img/decor/running.jpg") no-repeat;
+
+  -ms-grid-column: 3;
+
+  -ms-grid-column-span: 2;
+
+  grid-column: 3 / 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 /3;
+}
+
+.product-banner2col-title {
+  width: 360px;
+  margin: 50px 0 37px 50px;
+
+  font-style: italic;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 61px;
+  font-family: "Poppins";
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.product-banner2col .button {
+  margin-left: 54px;
+}
+
+.product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 373px;
+}
+
+.product-image {
+  margin: auto;
+}
+
+.product-item-title {
+  margin: 0;
+  margin-bottom: 7px;
+  margin-left: 46px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 26px;
+  font-family: "Bebas Neue";
+  color: #0d2e57;
+}
+
+.product-item-price {
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: 46px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  color: #3753da;
+}
+
+.old-item-price {
+  margin-left: 15px;
+
+  font-size: 11px;
+  color: #818181;
+  text-decoration: line-through;
+}
+
+.products > a {
+  display: block;
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  text-align: center;
+  color: #3753da;
+  text-transform: uppercase;
+}
+
+.activity-list {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  -ms-grid-columns: 25% 25% 25% 25%;
+
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.activity-list img {
+  display: block;
+  height: 375px;
+}
+
+.brands-list {
+  display: -ms-grid;
+  display: grid;
+  height: 504px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: #000000;
+
+  grid-gap: 1px;
+  -ms-grid-columns: 249px 1px 249px 1px 249px 1px 249px 1px 249px 1px 250px;
+  grid-template-columns: 249px 249px 249px 249px 249px 250px;
+  -ms-grid-rows: 50% 1px 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.brands-list > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.brands-list > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.brands-list > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.brands-list > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.brands-list > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.brands-list > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+
+.brands-list > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.brands-list > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.brands-list > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.brands-list > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.brands-list > *:nth-child(11) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+
+.brands-list > *:nth-child(12) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 11;
+}
+
+.brand-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: #ffffff no-repeat center;
+}
+
+.brand-item-hd {
+  background-image: url("../img/decor/brand-HarleyD.png");
+}
+
+.brand-item-adidas {
+  background-image: url("../img/decor/brand-adidas.png");
+}
+
+.brand-item-critios {
+  background-image: url("../img/decor/brand-critios.png");
+}
+
+.brand-item-general {
+  background-image: url("../img/decor/brand-general.png");
+}
+
+.brand-item-tnf {
+  background-image: url("../img/decor/brand-northFace.png");
+}
+
+.brand-item-reebok {
+  background-image: url("../img/decor/brand-reebok.png");
+}
+
+.brand-item-lacoste {
+  background-image: url("../img/decor/brand-lacoste.png");
+}
+
+.brand-item-caviar {
+  background-image: url("../img/decor/brand-caviar.png");
+}
+
+.footer {
+  margin-top: -75px;
+
+  background: url("../img/decor/Footer_bg.png");
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer ul {
+  margin: 0;
+  margin-bottom: 85px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer h3 {
+  margin: 0;
+  margin-top: 175px;
+  margin-bottom: 40px;
+
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Poppins";
+  color: #3753da;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Poppins";
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.footer-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-sm li {
+  width: 43px;
+  height: 43px;
+  margin-right: 25px;
+}
+
+.footer-sm-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: #ffffff no-repeat center;
+  border-radius: 50%;
+}
+
+.footer-sm-google {
+  background-image: url("../img/decor/sm-footer-g+.png");
+}
+
+.footer-sm-p {
+  background-image: url("../img/decor/sm-footer-p.png");
+}
+
+.footer-sm-vimeo {
+  background-image: url("../img/decor/sm-footer-vimeo.png");
+}
+
+.footer-sm-fb {
+  background-image: url("../img/decor/sm-footer-fb.png");
+}
+
+.footer-sm-twitter {
+  background-image: url("../img/decor/sm-footer-twitter.png");
+}
+
+.footer-sm-rss {
+  background-image: url("../img/decor/sm-footer-rss.png");
+}
+
+.footer-form h3 {
+  margin: 70px 0 5px;
+}
+
+.footer-form input {
+  width: 100%;
+  padding: 8px;
+
+  color: #ffffff;
+
+  background-color: #2f2f2f;
+  border: none;
+  border-radius: 20px;
+}
+
+.footer-form .button {
+  padding: 13px 26px;
+
+  line-height: 13px;
+
+  border: none;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 185px;
+
+  background: url("../img/decor/payment.png") no-repeat;
+  background-position: top 43px right 5px;
+  border-top: 1px solid rgba(255,255,255, 0.2);
+}
