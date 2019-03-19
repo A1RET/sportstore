@@ -281,9 +281,29 @@ img {
 }
 
 .feature-item {
+  position: relative;
   padding-bottom: 50px;
 
   text-align: center;
+}
+
+.feature-item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/decor/circle.png") no-repeat center;
+}
+
+.feature-item-plane::before {
+  background-image: url("../img/decor/plane.png");
+}
+
+.feature-item-clock::before {
+  background-image: url("../img/decor/clock.png");
 }
 
 .feature-title {
