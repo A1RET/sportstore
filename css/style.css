@@ -150,7 +150,7 @@ img {
 
 .header-navigation a {
   display: inline-block;
-  padding: 25px 18px 18px;
+  padding: 25px 22px 18px;
 
   font-weight: 600;
   font-size: 13px;
@@ -170,10 +170,15 @@ img {
   opacity: 0.3;
 }
 
+.header-navigation-menu a {
+  padding-left: 19px;
+  padding-right: 16px; 
+}
+
 .header-navigation .header-sm {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 298px;
+  width: 287px;
   margin: 0;
   margin-left: auto;
 }
@@ -225,11 +230,12 @@ img {
   width: 610px;
 
   text-align: center;
+  margin-left: 81px;
 }
 
 .banner h2 {
-  margin-top: 162px;
-  margin-bottom: 40px;
+  margin-top: 160px;
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: 204px;
@@ -243,9 +249,10 @@ img {
 .banner p {
   margin: 0;
   margin-bottom: 56px;
+  margin-left: 17px;
 
   font-weight: 700;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 29px;
   font-family: "Montserrat";
   color: #ffffff;
@@ -254,7 +261,8 @@ img {
 }
 
 .banner .button {
-  margin-bottom: 142px;
+  margin-bottom: 212px;
+  margin-left: 14px;
   padding: 13px 25px;
 
   font-size: 17px;
@@ -291,7 +299,7 @@ img {
 
 .feature-item {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 54px;
 
   text-align: center;
 }
@@ -316,7 +324,7 @@ img {
 }
 
 .feature-title {
-  margin: 167px 0 20px;
+  margin: 167px 0 17px;
 
   font-weight: 700;
   font-size: 33px;
@@ -328,10 +336,11 @@ img {
 
 .feature-text {
   width: 235px;
-  margin: 0 auto 14px;
+  margin: 0 auto 8px;
 
   font-size: 13px;
   line-height: 24px;
+  text-align: justify;
 }
 
 .feature-item a {
@@ -366,8 +375,8 @@ img {
 }
 
 .offer-description h2 {
-  margin-top: 112px;
-  margin-bottom: 32px;
+  margin-top: 120px;
+  margin-bottom: 22px;
 
   font-weight: 600;
   font-size: 20px;
@@ -380,7 +389,7 @@ img {
 
 .offer-title {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 38px;
 
   font-weight: 700;
   font-size: 43px;
@@ -391,14 +400,14 @@ img {
 
 .offer-text {
   width: 505px;
-  margin: 0 auto 36px;
+  margin: 0 auto 34px;
 
   text-align: justify;
 }
 
 .offer-price {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   font-weight: 700;
   font-size: 52px;
@@ -422,7 +431,7 @@ img {
   margin: 0;
   margin-right: 17px;
   margin-bottom: 42px;
-  padding: 26px 0 24px;
+  padding: 23px 0 16px;
 
   font-weight: 600;
   font-size: 38px;
@@ -488,7 +497,7 @@ img {
 }
 
 .product-banner-title {
-  margin: 50px 0 26px 50px;
+  margin: 62px 0 18px 50px;
 
   font-weight: 700;
   font-size: 60px;
@@ -514,6 +523,7 @@ img {
 
 .product-banner .button {
   margin-left: 54px;
+  padding: 11px 16px;
 }
 
 .product-banner2col {
@@ -531,7 +541,7 @@ img {
 
 .product-banner2col-title {
   width: 360px;
-  margin: 50px 0 37px 50px;
+  margin: 66px 0 28px 50px;
 
   font-style: italic;
   font-weight: 700;
@@ -547,6 +557,7 @@ img {
   color: #000000;
   background-color: #65cbff;
   margin-left: 54px;
+  padding: 12px 18px;
 }
 
 .product-banner2col .button:hover,
@@ -587,7 +598,7 @@ img {
 
 .product-item-title {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
   margin-left: 46px;
 
   font-weight: 700;
@@ -608,7 +619,7 @@ img {
 
 .product-item-price {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   margin-left: 46px;
 
   font-weight: 600;
@@ -794,7 +805,7 @@ img {
 }
 
 .footer {
-  margin-top: -75px;
+  margin-top: -88px;
 
   background: url("../img/decor/Footer_bg.png");
 }
