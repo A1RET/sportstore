@@ -7,7 +7,7 @@
 }
 
 body {
-  width: 1800px;
+  min-width: 1800px;
   margin: 0 auto;
   padding: 0;
 
@@ -18,8 +18,6 @@ body {
   color: #8a8a8a;
 
   background-color: #ffffff;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -85,6 +83,7 @@ img {
   z-index: 1;
 
   background: #024770 url("../img/decor/banner.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .header-navigation {
